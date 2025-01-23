@@ -1,0 +1,39 @@
+.nav-bar{
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #d4e9f0;
+}
+
+.logo{
+  font-weight: 500;
+  font-size: max(1.3rem,20px);
+  padding-top: 5px;
+}
+
+.btn{
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #105274;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: max(0.9rem,12px);
+}
+
+@keyframes fadeIn{
+  0%{
+    background-color: transparent;
+  }
+  50%{
+    color: white;
+  }
+  100%{
+    background-color: #105274;
+    color: white;
+  }
+}
+
+.btn:hover{
+  animation: fadeIn 1s;
+}
